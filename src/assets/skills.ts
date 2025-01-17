@@ -8,6 +8,10 @@ const skills = [
   { name: "Webpack" },
   { name: "REST API" },
   { name: "material UI" },
+  { name: "Redux" },
+  { name: "axios" },
+  { name: "formik" },
+  { name: "yup" },
 ];
 
 export default skills;
