@@ -4,7 +4,7 @@ const project = [
   {
     title: "E-Pharmacy",
     id: nanoid(),
-    image: "url",
+    image: "https://i.imgur.com/bwLHrNs.png",
     gitUrl: "https://github.com/ira089/Pharmacy",
     skills: [
       "React",
