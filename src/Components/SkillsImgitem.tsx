@@ -1,13 +1,15 @@
-import project from "../assets/data";
-
-const SkillsImgitem = () => {
+const SkillsImgitem = ({ item }) => {
+  const { title, image, gitUrl, website } = item;
   return (
-    <div>
-      <h3>{project[0].title}</h3>
-      <p>{project[0].id}</p>
-      <img src={project[0].image} alt="projekt" />
-      <a href={project[0].gitUrl} target="_blank">
+    <div className="collection">
+      <h4>{title}</h4>
+
+      <img className="collection__big" src={image} alt="projekt" />
+      <a href={gitUrl} target="_blank">
         GitHub
+      </a>
+      <a href={website} target="_blank">
+        Website
       </a>
     </div>
   );

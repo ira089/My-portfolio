@@ -1,11 +1,12 @@
 import { nanoid } from "nanoid";
 
-const project = [
+const projects = [
   {
     title: "E-Pharmacy",
     id: nanoid(),
     image: "https://i.imgur.com/bwLHrNs.png",
     gitUrl: "https://github.com/ira089/Pharmacy",
+    website: "https://ira089.github.io/Pharmacy/",
     skills: [
       "React",
       "HTML",
@@ -18,7 +19,30 @@ const project = [
       "yup",
     ],
   },
-  {},
+  {
+    title: "E-Pharmacy",
+    id: nanoid(),
+    image: "https://i.imgur.com/bwLHrNs.png",
+    gitUrl: "https://github.com/ira089/Pharmacy",
+    website: "https://ira089.github.io/Pharmacy/",
+    skills: ["React", "HTML", "CSS", "Node JS", "formik", "yup"],
+  },
+  {
+    title: "E-Pharmacy",
+    id: nanoid(),
+    image: "https://i.imgur.com/bwLHrNs.png",
+    gitUrl: "https://github.com/ira089/Pharmacy",
+    website: "https://ira089.github.io/Pharmacy/",
+    skills: ["material UI", "Redux", "axios", "formik", "yup"],
+  },
+  {
+    title: "E-Pharmacy",
+    id: nanoid(),
+    image: "https://i.imgur.com/bwLHrNs.png",
+    gitUrl: "https://github.com/ira089/Pharmacy",
+    website: "https://ira089.github.io/Pharmacy/",
+    skills: ["React", "HTML", "CSS", "REST API", "Redux", "axios", "formik"],
+  },
 ];
 
-export default project;
+export default projects;

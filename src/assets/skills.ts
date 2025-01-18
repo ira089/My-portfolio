@@ -1,4 +1,4 @@
-const skills = [
+const skillsName = [
   { name: "All" },
   { name: "React" },
   { name: "Node JS" },
@@ -14,4 +14,4 @@ const skills = [
   { name: "yup" },
 ];
 
-export default skills;
+export default skillsName;

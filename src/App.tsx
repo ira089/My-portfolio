@@ -1,6 +1,7 @@
-import "./App.css";
+// import { useState } from "react";
 import SkillsList from "./Components/SkillsList";
 import SkillsImgList from "./Components/SkillsImgList";
+import "./App.css";
 
 function App() {
   return (

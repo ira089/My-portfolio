@@ -1,10 +1,33 @@
 // import { useState } from "react";
-
-import "../index.scss";
+import skillsName from "../assets/skills";
+import { useSelector } from "react-redux";
+import { selectorSkill } from "../redux/selector";
 import SkillsImgitem from "./SkillsImgitem";
+import projects from "../assets/data";
+import "../index.scss";
 
 const SkillsImgList = () => {
-  return <SkillsImgitem />;
+  const { skillId } = useSelector(selectorSkill);
+  console.log(skillId);
+  console.log(skillsName[skillId].name);
+  const optionSkill = skillsName[skillId].name;
+
+  const elements =
+    skillId === 0
+      ? projects.map((item) => <SkillsImgitem key={item.id} item={item} />)
+      : projects
+          .filter((obj) => obj.skills.includes(optionSkill))
+          .map((item) => <SkillsImgitem key={item.id} item={item} />);
+
+  // const elements = projects.map((item) => (
+  //   <SkillsImgitem key={item.id} item={item} />
+  // ));
+
+  // const elements = projects
+  //   .filter((obj) => obj.skills.includes(optionSkill))
+  //   .map((item) => <SkillsImgitem key={item.id} item={item} />);
+
+  return <div className="content">{elements}</div>;
 };
 
 export default SkillsImgList;
