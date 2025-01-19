@@ -1,6 +1,7 @@
 import { nanoid } from "nanoid";
+import { IProject } from "../models";
 
-const projects = [
+const projects: IProject[] = [
   {
     title: "E-Pharmacy",
     id: nanoid(),

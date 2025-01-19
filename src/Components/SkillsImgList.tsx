@@ -14,10 +14,10 @@ const SkillsImgList = () => {
 
   const elements =
     skillId === 0
-      ? projects.map((item) => <SkillsImgitem key={item.id} item={item} />)
+      ? projects.map((item) => <SkillsImgitem key={item.id} project={item} />)
       : projects
           .filter((obj) => obj.skills.includes(optionSkill))
-          .map((item) => <SkillsImgitem key={item.id} item={item} />);
+          .map((item) => <SkillsImgitem key={item.id} project={item} />);
 
   // const elements = projects.map((item) => (
   //   <SkillsImgitem key={item.id} item={item} />
