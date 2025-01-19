@@ -1,16 +1,16 @@
-import { SetStateAction, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useState } from "react";
+import { useAppDispatch } from "../hook";
 import { optionSkill } from "../redux/slice";
 import skillsName from "../assets/skills";
 import "../index.scss";
 
-const SkillsList = () => {
-  const dispatch = useDispatch();
+const SkillsList: React.FC = () => {
+  const dispatch = useAppDispatch();
 
   const [skillId, setSkillId] = useState(0);
   console.log(skillId);
 
-  const handleClick = (ind: SetStateAction<number>) => {
+  const handleClick = (ind: number) => {
     setSkillId(ind);
     dispatch(optionSkill(ind));
   };

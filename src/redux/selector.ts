@@ -1,1 +1,1 @@
-export const selectorSkill = (state) => state.skill;
+// export const selectorSkill = (state) => state.skill;

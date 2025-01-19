@@ -1,12 +1,17 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
+type Skill = {
+  skillId: number;
+};
+
+const initialState: Skill = {
+  skillId: 0,
+};
 const skillSlice = createSlice({
   name: "skill",
-  initialState: {
-    skillId: 0,
-  },
+  initialState,
   reducers: {
-    optionSkill: (state, { payload }) => {
+    optionSkill: (state, { payload }: PayloadAction<number>) => {
       state.skillId = payload;
     },
   },

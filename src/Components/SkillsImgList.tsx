@@ -1,15 +1,16 @@
 // import { useState } from "react";
 import skillsName from "../assets/skills";
-import { useSelector } from "react-redux";
-import { selectorSkill } from "../redux/selector";
+import { useAppSelector } from "../hook";
+// import { selectorSkill } from "../redux/selector";
 import SkillsImgitem from "./SkillsImgitem";
 import projects from "../assets/data";
 import "../index.scss";
 
-const SkillsImgList = () => {
-  const { skillId } = useSelector(selectorSkill);
+const SkillsImgList: React.FC = () => {
+  const skillId = useAppSelector((state) => state.skill.skillId);
+  // const { skillId } = useSelector(selectorSkill);
   console.log(skillId);
-  console.log(skillsName[skillId].name);
+  // console.log(skillsName[skillId].name);
   const optionSkill = skillsName[skillId].name;
 
   const elements =

@@ -4,7 +4,7 @@ interface ProjectProps {
   project: IProject;
 }
 
-const SkillsImgitem = ({ project }: ProjectProps) => {
+const SkillsImgitem: React.FC<ProjectProps> = ({ project }) => {
   const { title, image, gitUrl, website } = project;
   return (
     <div className="collection">
