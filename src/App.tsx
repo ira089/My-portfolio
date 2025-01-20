@@ -6,12 +6,16 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div>
-        <h1>My Tech Skills</h1>
-        <SkillsList />
-      </div>
+      <header>ebfkek</header>
+      <main>
+        <div>
+          <h1>My Tech Skills</h1>
+          <SkillsList />
+        </div>
 
-      <SkillsImgList />
+        <SkillsImgList />
+      </main>
+      <footer>derf</footer>
     </>
   );
 }

@@ -1,5 +1,6 @@
 const skillsName = [
   { name: "All" },
+  { name: "JavaScript" },
   { name: "React" },
   { name: "Node JS" },
   { name: "HTML" },
@@ -9,8 +10,8 @@ const skillsName = [
   { name: "REST API" },
   { name: "material UI" },
   { name: "axios" },
-  { name: "formik" },
-  { name: "yup" },
+  { name: "SCSS" },
+  { name: "TypeScript" },
 ];
 
 export default skillsName;
