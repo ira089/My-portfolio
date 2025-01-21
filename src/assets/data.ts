@@ -60,7 +60,7 @@ const projects: IProject[] = [
       "axios",
       "Node JS",
     ],
-    description: "E-Pharmacy upd2",
+    description: "Lorem kdflejflsdc,x c,c lkenfjflkd,x c, v.,vldk",
   },
 ];
 

@@ -1,18 +1,17 @@
 interface ModalProps {
-  children: React.ReactNode;
-  text: string;
-
+  text?: string;
+  image?: string;
   onClose: () => void;
 }
 
-const Modal = ({ children, text, onClose }: ModalProps) => {
+const Modal = ({ text, onClose, image }: ModalProps) => {
   return (
     <>
       <div className="modal" onClick={onClose} />
 
       <div className="content-modal">
-        <p>{text}</p>
-        {children}
+        {image && <img src={image} alt="item" />}
+        {text && <p>{text}</p>}
       </div>
     </>
   );
