@@ -1,17 +1,15 @@
-import { useState } from "react";
+// import { useContext } from "react";
+// import { ModalContext } from "./context/ModalContext";
 import SkillsList from "./Components/SkillsList";
 import SkillsImgList from "./Components/SkillsImgList";
+// import Modal from "./Components/Modal";
+// import ModalDescription from "./Components/ModalDescription";
 import "./App.css";
-import Modal from "./Components/Modal";
-import ModalDescription from "./Components/ModalDescription";
 
 function App() {
-  const [modal, setModal] = useState(false);
   return (
     <>
-      <header>
-        <button onClick={() => setModal(true)}> 112234</button>
-      </header>
+      <header>{/* <button onClick={open}> 112234</button> */}</header>
       <main>
         <div>
           <h1>My Tech Skills</h1>
@@ -21,11 +19,6 @@ function App() {
         <SkillsImgList />
       </main>
       <footer>derf</footer>
-      {modal && (
-        <Modal description="description" onClose={() => setModal(false)}>
-          <ModalDescription />
-        </Modal>
-      )}
     </>
   );
 }

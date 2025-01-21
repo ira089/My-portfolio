@@ -8,9 +8,7 @@ import "../index.scss";
 
 const SkillsImgList: React.FC = () => {
   const skillId = useAppSelector((state) => state.skill.skillId);
-  // const { skillId } = useSelector(selectorSkill);
   console.log(skillId);
-  // console.log(skillsName[skillId].name);
   const optionSkill = skillsName[skillId].name;
 
   const elements =

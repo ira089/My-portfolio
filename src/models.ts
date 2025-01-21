@@ -5,4 +5,5 @@ export interface IProject {
   gitUrl: string;
   website: string;
   skills: string[];
+  description: string;
 }

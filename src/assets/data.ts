@@ -24,6 +24,7 @@ const projects: IProject[] = [
 
       "Webpack",
     ],
+    description: "E-Pharmacy",
   },
   {
     title: "LearnForeignLanguage",
@@ -32,6 +33,7 @@ const projects: IProject[] = [
     gitUrl: "https://github.com/ira089/LearnForeignLanguage",
     website: "https://ira089.github.io/LearnForeignLanguage/",
     skills: ["JavaScript", "React", "HTML", "CSS", "Redux", "Webpack"],
+    description: "LearnForeignLanguage",
   },
   {
     title: "E-Pharmacy",
@@ -40,6 +42,7 @@ const projects: IProject[] = [
     gitUrl: "https://github.com/ira089/Pharmacy",
     website: "https://ira089.github.io/Pharmacy/",
     skills: ["JavaScript", "material UI", "Redux", "axios"],
+    description: "E-Pharmacy upd",
   },
   {
     title: "E-Pharmacy",
@@ -57,6 +60,7 @@ const projects: IProject[] = [
       "axios",
       "Node JS",
     ],
+    description: "E-Pharmacy upd2",
   },
 ];
 
