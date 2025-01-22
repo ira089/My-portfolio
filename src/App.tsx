@@ -1,15 +1,13 @@
-// import { useContext } from "react";
-// import { ModalContext } from "./context/ModalContext";
 import SkillsList from "./Components/SkillsList";
 import SkillsImgList from "./Components/SkillsImgList";
-// import Modal from "./Components/Modal";
-// import ModalDescription from "./Components/ModalDescription";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <header>{/* <button onClick={open}> 112234</button> */}</header>
+      <Header />
       <main>
         <div>
           <h1>My Tech Skills</h1>
@@ -18,7 +16,7 @@ function App() {
 
         <SkillsImgList />
       </main>
-      <footer>derf</footer>
+      <Footer />
     </>
   );
 }
