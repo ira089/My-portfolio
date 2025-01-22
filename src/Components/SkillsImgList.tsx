@@ -1,7 +1,6 @@
 import { useState } from "react";
 import skillsName from "../assets/skills";
 import { useAppSelector } from "../hook";
-// import { selectorSkill } from "../redux/selector";
 import SkillsImgitem from "./SkillsImgitem";
 import projects from "../assets/data";
 import "../index.scss";

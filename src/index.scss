@@ -13,6 +13,11 @@
   background-color: rgba(255, 255, 255, 0.87);
   color: #242424;
 
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -31,6 +36,19 @@ body {
   // -webkit-font-smoothing: antialiased;
   // -moz-osx-font-smoothing: grayscale;
   //
+}
+
+main {
+  background-color: rgba(128, 128, 128, 0.093);
+
+  @media (min-width: 600px) {
+    background-image: url("./assets/image/5615256.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
 }
 
 a {
@@ -54,6 +72,7 @@ button {
   font-family: Inter, system-ui;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     color: #4de8fc;
@@ -79,7 +98,7 @@ h3 {
   li {
     display: inline-block;
     padding: 12px 18px;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 10px;
     margin-right: 10px;
     cursor: pointer;
@@ -234,4 +253,13 @@ h3 {
   overflow: auto;
   margin: auto;
   background-color: #fff;
+}
+
+.wrapLink {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  margin-top: 8px;
 }

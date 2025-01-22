@@ -42,13 +42,15 @@ const SkillsImgitem: React.FC<ProjectProps> = ({
           alt="Item"
         />
       </div>
-      <a href={gitUrl} target="_blank">
-        GitHub
-      </a>
-      <a href={website} target="_blank">
-        Website
-      </a>
-      <button onClick={() => onOpen(description)}>Find out more</button>
+      <div className="wrapLink">
+        <a href={gitUrl} target="_blank">
+          GitHub
+        </a>
+        <a href={website} target="_blank">
+          Website
+        </a>
+        <button onClick={() => onOpen(description)}>Find out more</button>
+      </div>
     </div>
   );
 };
