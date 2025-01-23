@@ -2,16 +2,17 @@ const skillsName = [
   { name: "All" },
   { name: "JavaScript" },
   { name: "React" },
+  { name: "TypeScript" },
+  { name: "Redux" },
   { name: "Node JS" },
   { name: "HTML" },
   { name: "CSS" },
-  { name: "Redux" },
+  { name: "SCSS" },
   { name: "Webpack" },
-  { name: "REST API" },
+  { name: "Vite" },
+  { name: "Rest Api" },
   { name: "material UI" },
   { name: "axios" },
-  { name: "SCSS" },
-  { name: "TypeScript" },
 ];
 
 export default skillsName;
