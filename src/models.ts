@@ -1,4 +1,5 @@
 export interface IProject {
+  numberId: number;
   title: string;
   id: string;
   photos: string[];
