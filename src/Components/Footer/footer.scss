@@ -5,23 +5,18 @@
 @use "sass:map";
 
 .footer {
-  display: grid;
+  @extend %header-footer;
+
   grid-template-columns: auto auto auto;
   justify-content: space-around;
-  align-content: center;
-  align-items: center;
   padding: 12px;
-  border-bottom-right-radius: 16px;
-  border-bottom-left-radius: 16px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.415);
-  background-color: map.get(var.$colors, "background-hed-foot");
 
   a {
-    display: grid;
-    grid-template-columns: auto auto;
+    @extend %icon-avatar;
+
     gap: 10px;
     align-content: center;
-    align-items: center;
 
     .icon {
       font-size: 28px;

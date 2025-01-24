@@ -1,0 +1,33 @@
+@use "./variables" as var;
+
+@use "sass:map";
+
+%button-link {
+  font-weight: map.get(var.$font-weights, "Medium");
+  color: map.get(var.$colors, "color-link");
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: map.get(var.$colors, "color-link-hover");
+  }
+}
+
+%header-footer {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  background-color: map.get(var.$colors, "background-hed-foot");
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+%icon-avatar {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+%img-size {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}

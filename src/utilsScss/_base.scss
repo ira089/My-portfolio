@@ -27,31 +27,21 @@ main {
 }
 
 a {
-  font-weight: map.get(var.$font-weights, "Medium");
-  color: map.get(var.$colors, "color-link");
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  @extend %button-link;
 
-  &:hover {
-    color: map.get(var.$colors, "color-link-hover");
-  }
+  text-decoration: none;
 }
 
 button {
-  font-weight: map.get(var.$font-weights, "Medium");
-  color: map.get(var.$colors, "color-link");
+  @extend %button-link;
+
   background-color: map.get(var.$colors, "transparent");
   border: none;
   padding: 0;
   font-size: map.get(var.$font-sizes, "md");
   font-family: Inter, system-ui;
   text-align: center;
-  transition: all 0.3s ease-in-out;
   cursor: pointer;
-
-  &:hover {
-    color: map.get(var.$colors, "color-link-hover");
-  }
 }
 
 h1,
@@ -71,9 +61,7 @@ h3 {
     border-radius: 10px;
     margin-right: 10px;
     cursor: pointer;
-    // font-weight: 500;
     font-weight: map.get(var.$font-weights, "Medium");
-    // font-size: 18px;
     font-size: map.get(var.$font-sizes, "lg");
     border: 1px solid transparent;
     transition: all 0.3s ease-in-out;
