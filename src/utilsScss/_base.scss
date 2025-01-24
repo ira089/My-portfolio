@@ -1,0 +1,106 @@
+@use "./placeholders";
+@use "./variables" as var;
+@use "./mixins" as mx;
+
+@use "sass:map";
+
+body {
+  margin: 0;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+main {
+  background-color: map.get(var.$colors, "background-mobile");
+
+  @include mx.mq("md") {
+    background-image: url("./assets/image/5615256.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+}
+
+a {
+  font-weight: map.get(var.$font-weights, "Medium");
+  color: map.get(var.$colors, "color-link");
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: map.get(var.$colors, "color-link-hover");
+  }
+}
+
+button {
+  font-weight: map.get(var.$font-weights, "Medium");
+  color: map.get(var.$colors, "color-link");
+  background-color: map.get(var.$colors, "transparent");
+  border: none;
+  padding: 0;
+  font-size: map.get(var.$font-sizes, "md");
+  font-family: Inter, system-ui;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: map.get(var.$colors, "color-link-hover");
+  }
+}
+
+h1,
+h3 {
+  font-family: "Merriweather", serif;
+  margin: 0;
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: map.get(var.$colors, "transparent");
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    // font-weight: 500;
+    font-weight: map.get(var.$font-weights, "Medium");
+    // font-size: 18px;
+    font-size: map.get(var.$font-sizes, "lg");
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      border-color: map.get(var.$colors, "dark");
+    }
+
+    &.active {
+      background-color: map.get(var.$colors, "dark");
+      color: map.get(var.$colors, "light");
+    }
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding: 0 10px 10px 10px;
+
+  @include mx.mq("lg", max) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mx.mq("md", max) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,14 +1,14 @@
 import { useState } from "react";
 import skillsName from "../assets/skills";
 import { useAppSelector } from "../hook";
-import SkillsImgitem from "./SkillsImgitem";
+import SkillsImgitem from "../Components/SkillsImgitem/SkillsImgitem";
 import projects from "../assets/data";
+import Modal from "../Components/Modal/Modal";
 import "../index.scss";
-import Modal from "./Modal";
 
 const SkillsImgList: React.FC = () => {
   const skillId = useAppSelector((state) => state.skill.skillId);
-  // console.log(skillId);
+
   const optionSkill = skillsName[skillId].name;
 
   const [modalData, setModalData] = useState<string | null>(null);

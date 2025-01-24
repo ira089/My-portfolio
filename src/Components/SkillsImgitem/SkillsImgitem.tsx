@@ -1,4 +1,5 @@
-import { IProject } from "../models";
+import { IProject } from "../../models";
+import "./skillsImgitem.scss";
 
 interface ProjectProps {
   project: IProject;

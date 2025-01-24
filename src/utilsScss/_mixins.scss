@@ -1,0 +1,20 @@
+@use "sass:map";
+@use "sass:list";
+
+@use "./variables" as var;
+
+@mixin mq($bp: sm, $type: min) {
+  @if map.has-key(var.$breakpoints, $bp) {
+    $width: map.get(var.$breakpoints, $bp);
+
+    @if $type == max {
+      $width: $width - 0.02px;
+    }
+
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  } @else {
+    @error "";
+  }
+}

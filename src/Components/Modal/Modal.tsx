@@ -1,3 +1,5 @@
+import "./modal.scss";
+
 interface ModalProps {
   text?: string;
   image?: string;
