@@ -26,7 +26,7 @@ const projects: IProject[] = [
       "Webpack",
     ],
     description:
-      "The project was created according to the layout Figma. The layout is fluid starting from 320px and adaptive starting from 375px. This is an individual project. Additional technologies used: react-router-dom, formik, yup, react-toastify, react-select, redux-persist. This application is for choosing medicines. You can buy or find the medicine you need online the pharmacy closest to you. ",
+      "This individual project was developed based on a design created in Figma. The layout features a fluid design starting at 320px and becomes fully adaptive from 375px onward. The application is designed to help users select medicines by locating the closest pharmacy online. Additional libraries used: react-router-dom, Formik, Yup, react-toastify, react-select, redux-persist.",
   },
 
   {
@@ -60,7 +60,7 @@ const projects: IProject[] = [
     website: "https://ira089.github.io/LearnForeignLanguage/",
     skills: ["JavaScript", "React", "HTML", "CSS", "Redux", "Webpack"],
     description:
-      "The project was created according to the layout Figma. The layout is fluid. This is an individual project. Additional technologies used: firebase, react-hook-form, react-router-dom, yup, react-select, react-icons, react-toastify, redux-persist. This application allows you to choose a foreign language teacher to study online. ",
+      "This individual project was developed based on a design created in Figma. The layout is fluid. The application allows you to choose a foreign language teacher to study online. Additional libraries used: firebase, react-hook-form, react-router-dom, yup, react-select, react-icons, react-toastify, redux-persist.",
   },
 
   {
@@ -87,7 +87,7 @@ const projects: IProject[] = [
       "Webpack",
     ],
     description:
-      "The project was created according to the layout Figma. The layout is fluid starting from 320px and adaptive starting from 375px. This is an individual project. Additional technologies used: react-hook-form, react-router-dom, date-fns, formik, yup, react-select, react-toastify, redux-persist. This is an app about pets. You can record your pet's details, read about other people's pets, sort animals by popularity, price, location, animal type, or category. You can search simply by keyword. You can read news about animals or see partners' contacts. ",
+      "This individual project was developed based on a design created in Figma. The layout features a fluid design starting at 320px and becomes fully adaptive from 375px onward. The application is dedicated to pet enthusiasts, allowing users to record and manage their pets’ details, explore other users' pets, and sort animals by popularity, price, location, type, or category. Additionally, users can perform keyword searches, read news about animals, and access partner contact information. Additional libraries used: react-hook-form, react-router-dom, date-fns, formik, yup, react-select, react-toastify, redux-persist.",
   },
   {
     numberId: 5,
@@ -112,7 +112,7 @@ const projects: IProject[] = [
       "Webpack",
     ],
     description:
-      "The project was created according to the layout Figma. The layout is fluid starting from 320px and adaptive starting from 375px. This is a team project. Additional technologies used: styled-components, react-hook-form, react-router-dom, yup, react-icons, react-toastify, redux-persist. A task management app, an alternative to Trello. My contribution includes frontend development (logic, markup, styles) ofthe following parts of the application: user registration and login, userprofile editing, task filtering, moving tasks to different sections, modalwindows for adding and editing sections, and displaying tasks on the task board.",
+      "This team project was developed based on a design created in Figma. The layout features a fluid design starting at 320px and becomes fully adaptive from 375px onward. The application is a task management tool, serving as an alternative to Trello. Additional libraries used: styled-components, react-hook-form, react-router-dom, yup, react-icons, react-toastify, redux-persist. My Contributions: Frontend development (including logic, markup, and styles) for User registration and login; User profile editing; Task filtering and moving tasks between sections; Modal windows for adding and editing sections; Displaying tasks on the task board.",
   },
 
   {
@@ -129,7 +129,7 @@ const projects: IProject[] = [
     website: "https://nahirniy.github.io/Code-Storm/",
     skills: ["JavaScript", "HTML", "CSS"],
     description:
-      "The project was created according to the layout Figma. The layout is adaptive. This is a team project. Additional technologies used: Local Storage. This application is an online grocery store. I responsible forimplementing a dynamic Cart feature utilizing localStorage for data persistence",
+      "This team project was developed based on a design created in Figma. The layout is fully adaptive, ensuring a seamless user experience across devices. The application is an online grocery store, designed to simplify shopping with an intuitive interface and dynamic features. Additional technologies used: Local Storage. I was responsible for implementing the dynamic Cart feature, utilizing Local Storage for data persistence.",
   },
 
   {
@@ -146,7 +146,7 @@ const projects: IProject[] = [
     website: "https://liubapohudina.github.io/project-team9/",
     skills: ["HTML", "CSS"],
     description:
-      "The project was created according to the layout Figma. The layout is adaptive. This is a team project. This application of a minimalist furniture website. I made a footer with links to a Google map and social networks ",
+      "This team project was developed based on a design created in Figma. The layout is fully adaptive, providing a smooth and engaging user experience across various device. The application is a minimalist furniture website designed to showcase products in a clean and modern interface. I was responsible for developing the footer section, which includes links to a Google Map for easy location access and social media links to enhance user connectivity and engagement.",
   },
 
   {

@@ -13,7 +13,12 @@ const Modal = ({ text, onClose, image }: ModalProps) => {
 
       <div className="content-modal">
         {image && <img src={image} alt="item" />}
-        {text && <p>{text}</p>}
+        {text && (
+          <>
+            <h2>Brief description of the project</h2>
+            <p>{text}</p>
+          </>
+        )}
       </div>
     </>
   );
