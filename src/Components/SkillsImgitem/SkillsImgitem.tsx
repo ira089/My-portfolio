@@ -18,11 +18,19 @@ const SkillsImgitem: React.FC<ProjectProps> = ({
   return (
     <div className="collection">
       <h4>{title}</h4>
+      <div className="wrapLink">
+        <a href={gitUrl} target="_blank">
+          GitHub
+        </a>
+        <a href={website} target="_blank">
+          Website
+        </a>
+        <button onClick={() => onOpen(description)}>Find out more</button>
+      </div>
 
       <img
         onClick={() => onOpenImg(photos[0])}
         className={lengthProject === 4 ? "collection__big" : "collection__one"}
-        // className="collection__big"
         src={photos[0]}
         alt="projekt"
       />
@@ -49,16 +57,6 @@ const SkillsImgitem: React.FC<ProjectProps> = ({
           />
         </div>
       )}
-
-      <div className="wrapLink">
-        <a href={gitUrl} target="_blank">
-          GitHub
-        </a>
-        <a href={website} target="_blank">
-          Website
-        </a>
-        <button onClick={() => onOpen(description)}>Find out more</button>
-      </div>
     </div>
   );
 };

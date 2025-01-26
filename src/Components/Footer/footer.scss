@@ -9,8 +9,6 @@
 
   grid-template-columns: auto auto auto;
   justify-content: space-around;
-  padding: 12px;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.415);
 
   a {
     @extend %icon-avatar;
