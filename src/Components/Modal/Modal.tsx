@@ -1,18 +1,21 @@
+import ModalSwiper from "../ModalSwiper/ModalSwiper";
 import "./modal.scss";
 
 interface ModalProps {
   text?: string;
-  image?: string;
+  images?: string[];
   onClose: () => void;
 }
 
-const Modal = ({ text, onClose, image }: ModalProps) => {
+const Modal = ({ text, onClose, images }: ModalProps) => {
+  // console.log(images[2]);
+  // console.log(text);
   return (
     <>
       <div className="modal" onClick={onClose} />
 
       <div className="content-modal">
-        {image && <img src={image} alt="item" />}
+        {images && <ModalSwiper images={images} />}
         {text && (
           <>
             <h2>Brief description of the project</h2>

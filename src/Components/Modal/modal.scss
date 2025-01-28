@@ -22,7 +22,8 @@
   width: 60%;
   background-color: map.get(var.$colors, "light");
   transform: translate(-50%, -50%);
-  max-height: 94%;
+  max-height: 80%;
+
   overflow: auto;
   margin: auto;
 
@@ -35,5 +36,6 @@
 
   img {
     width: 100%;
+    object-fit: contain;
   }
 }

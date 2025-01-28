@@ -4,7 +4,7 @@ import "./skillsImgitem.scss";
 interface ProjectProps {
   project: IProject;
   onOpen: (description: string) => void;
-  onOpenImg: (photo: string) => void;
+  onOpenImg: (photos: string[]) => void;
 }
 
 const SkillsImgitem: React.FC<ProjectProps> = ({
@@ -13,7 +13,7 @@ const SkillsImgitem: React.FC<ProjectProps> = ({
   onOpenImg,
 }) => {
   const { title, photos, gitUrl, website, description } = project;
-  const lengthProject = project.photos.length;
+  // const lengthProject = project.photos.length;
 
   return (
     <div className="collection">
@@ -29,13 +29,14 @@ const SkillsImgitem: React.FC<ProjectProps> = ({
       </div>
 
       <img
-        onClick={() => onOpenImg(photos[0])}
-        className={lengthProject === 4 ? "collection__big" : "collection__one"}
+        // onClick={() => onOpenImg(photos[0])}
+        onClick={() => onOpenImg(photos)}
+        className="collection__big"
         src={photos[0]}
         alt="projekt"
       />
 
-      {lengthProject === 4 && (
+      {/* {lengthProject === 4 && (
         <div className="collection__bottom">
           <img
             onClick={() => onOpenImg(photos[1])}
@@ -56,7 +57,7 @@ const SkillsImgitem: React.FC<ProjectProps> = ({
             alt="Item"
           />
         </div>
-      )}
+      )} */}
     </div>
   );
 };

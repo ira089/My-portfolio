@@ -39,22 +39,22 @@
     height: 250px;
   }
 
-  &__one {
-    @extend %img-size;
+  // &__one {
+  //   @extend %img-size;
 
-    height: 360px;
-  }
+  //   height: 360px;
+  // }
 
-  &__bottom {
-    display: flex;
-    justify-content: space-between;
-  }
+  // &__bottom {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
 
-  &__mini {
-    width: 31%;
-    height: 80px;
-    border-radius: 20px;
-  }
+  // &__mini {
+  //   width: 31%;
+  //   height: 80px;
+  //   border-radius: 20px;
+  // }
 
   .wrapLink {
     display: grid;

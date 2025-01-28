@@ -20,9 +20,9 @@ const SkillsImgList: React.FC = () => {
     setModalData(null);
   };
 
-  const [modalImg, setModalImg] = useState<string | null>(null);
-  const openModalImg = (photo: string) => {
-    setModalImg(photo);
+  const [modalImg, setModalImg] = useState<string[] | null>(null);
+  const openModalImg = (photos: string[]) => {
+    setModalImg(photos);
   };
 
   const closeModalImg = () => {
@@ -54,7 +54,7 @@ const SkillsImgList: React.FC = () => {
     <>
       <div className="content">{elements}</div>
       {modalData && <Modal text={modalData} onClose={closeModal} />}
-      {modalImg && <Modal image={modalImg} onClose={closeModalImg} />}
+      {modalImg && <Modal images={modalImg} onClose={closeModalImg} />}
     </>
   );
 };
