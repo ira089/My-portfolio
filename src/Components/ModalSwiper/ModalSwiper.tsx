@@ -1,13 +1,18 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Navigation } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
 import "./modalSwiper.scss";
 
-const ModalSwiper = ({ images }) => {
-  //   console.log(images[0]);
+interface ImagesProps {
+  images: string[];
+}
+
+const ModalSwiper: React.FC<ImagesProps> = ({ images }) => {
   return (
     <>
       <Swiper
@@ -15,23 +20,28 @@ const ModalSwiper = ({ images }) => {
         effect={"fade"}
         navigation={true}
         loop={true}
-        // pagination={{
-        //   clickable: true,
-        // }}
         modules={[EffectFade, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={images[0]} />
+          <div className="wrapImg">
+            <img src={images[0]} />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={images[1]} />
+          <div className="wrapImg">
+            <img src={images[1]} />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={images[2]} />
+          <div className="wrapImg">
+            <img src={images[2]} />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={images[3]} />
+          <div className="wrapImg">
+            <img src={images[3]} />
+          </div>
         </SwiperSlide>
       </Swiper>
     </>
