@@ -13,7 +13,6 @@ const SkillsImgitem: React.FC<ProjectProps> = ({
   onOpenImg,
 }) => {
   const { title, photos, gitUrl, website, description } = project;
-  // const lengthProject = project.photos.length;
 
   return (
     <div className="collection">
@@ -29,35 +28,11 @@ const SkillsImgitem: React.FC<ProjectProps> = ({
       </div>
 
       <img
-        // onClick={() => onOpenImg(photos[0])}
         onClick={() => onOpenImg(photos)}
         className="collection__big"
         src={photos[0]}
         alt="projekt"
       />
-
-      {/* {lengthProject === 4 && (
-        <div className="collection__bottom">
-          <img
-            onClick={() => onOpenImg(photos[1])}
-            className="collection__mini"
-            src={photos[1]}
-            alt="Item"
-          />
-          <img
-            onClick={() => onOpenImg(photos[2])}
-            className="collection__mini"
-            src={photos[2]}
-            alt="Item"
-          />
-          <img
-            onClick={() => onOpenImg(photos[3])}
-            className="collection__mini"
-            src={photos[3]}
-            alt="Item"
-          />
-        </div>
-      )} */}
     </div>
   );
 };
